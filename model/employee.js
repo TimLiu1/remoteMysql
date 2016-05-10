@@ -1,9 +1,9 @@
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-    host:'57315d2a2788d.sh.cdb.myqcloud.com',
+    host:'',
     user:'root',
-    password:'123abcABC',
+    password:'',
     database:'nodejs',
     port:6445
 })
