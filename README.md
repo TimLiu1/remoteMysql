@@ -3,7 +3,7 @@
 **所有源码地址均在我的github上，地址(https://github.com/TimLiu1/remoteMysql.git)  可以在上面提任何问题，我会及时解答* [@TimLiu](https://github.com/TimLiu1)
 
            一、申请数据库实例
-1. 首先是登陆腾讯云，[@腾讯云链接](http://www.qcloud.com/redirect.php?redirect=1003&cps_key=c8207f26556787357dfbc5b5133b2d19) ，登陆之后可以领取新手礼包，如图
+1. 首先是登陆腾讯云，[@腾讯云链接](http://www.qcloud.com/redirect.php?redirect=1003&cps_key=c8207f26556787357dfbc5b5133b2d19) ，点进区之后点登陆，登陆之后可以领取新手礼包，如图
 
 ![alt text](/images/one.png "one")
 2. 进入云产品->数据库->CDB for MYSQL->立即选购，选购最低配的可用礼包抵扣使用一个月，购买完成
