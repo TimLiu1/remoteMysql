@@ -1,36 +1,43 @@
 # remoteMysql
-¹ØÓÚÌÚÑ¶ÔÆÆ½Ì¨µÄ½¨Á¢ºÍnodejsÈçºÎÁ¬½ÓÌÚÑ¶ÔÆmysqlºÍmongooseÊı¾İ¿â
+           å…³äºè…¾è®¯äº‘å¹³å°çš„å»ºç«‹å’Œnodejså¦‚ä½•è¿æ¥è…¾è®¯äº‘mysqlå’Œmongooseæ•°æ®åº“
+<big>æ‰€æœ‰æºç åœ°å€å‡åœ¨æˆ‘çš„githubä¸Šï¼Œåœ°å€(https://github.com/TimLiu1/remoteMysql.git)  å¯ä»¥åœ¨ä¸Šé¢æä»»ä½•é—®é¢˜ï¼Œæˆ‘ä¼šåŠæ—¶è§£ç­”</big>
 
-1¡¢Ê×ÏÈÊÇµÇÂ½ÌÚÑ¶ÔÆ£¬Á´½Óhttps://passport.qcloud.com/£¬µÇÂ½Ö®ºó¿ÉÒÔÁìÈ¡ĞÂÊÖÀñ°ü£¬ÈçÍ¼
+           ä¸€ã€ç”³è¯·æ•°æ®åº“å®ä¾‹
+1. é¦–å…ˆæ˜¯ç™»é™†è…¾è®¯äº‘ï¼Œé“¾æ¥(https://passport.qcloud.com/)ï¼Œç™»é™†ä¹‹åå¯ä»¥é¢†å–æ–°æ‰‹ç¤¼åŒ…ï¼Œå¦‚å›¾
+2. è¿›å…¥äº‘äº§å“->æ•°æ®åº“->CDB for MYSQL->ç«‹å³é€‰è´­ï¼Œé€‰è´­æœ€ä½é…çš„å¯ç”¨ç¤¼åŒ…æŠµæ‰£ä½¿ç”¨ä¸€ä¸ªæœˆï¼Œè´­ä¹°å®Œæˆ
+3. ä¸»é¡µ->å³ä¸Šè§’äº§å“ç®¡ç†->ä½¿ç”¨ä¸­çš„æ•°æ®åº“,è¿™æ—¶æˆ‘ä»¬ä¼šçœ‹è§ä¸€ä¸ªå®ä¾‹ï¼Œé¦–å…ˆæˆ‘ä»¬è¿›å…¥ç®¡ç†é¡µé¢å¯¹å®ä¾‹è¿›è¡Œä¸€äº›åŸºæœ¬çš„è®¾ç½®
+å®ä¾‹åå¯ä»¥éšæ„æ›´æ”¹ï¼Œå¤–ç½‘åœ°å€å¿…é¡»å¼€å¯ï¼Œå¦åˆ™æˆ‘ä»¬å°±ä¸èƒ½åœ¨è‡ªå·±çš„é¡¹ç›®ä¸­å’Œæœ¬åœ°è®¿é—®äº‘æ•°æ®åº“ã€‚è¿›å…¥è´¦å·ç®¡ç†é¡µé¢ä¿®æ”¹è‡ªå·±çš„rootå¯†ç ï¼Œç„¶åç‚¹å‡»å³ä¸Šè§’çš„ç™»å½•æ•°æ®åº“
+ 
+4. ç™»é™†å®Œæˆä¹‹åå¦‚ä¸‹å›¾
+è¿™ä¸ªå’Œæœ¬åœ°å®¢æˆ·ç«¯æ“ä½œåŸºæœ¬ç›¸åŒï¼Œæˆ‘å°±ä¸è¯¦ç»†é˜è¿°äº†
  
 
-2¡¢½øÈëÔÆ²úÆ·->Êı¾İ¿â->CDB for MYSQL->Á¢¼´Ñ¡¹º£¬Ñ¡¹º×îµÍÅäµÄ¿ÉÓÃÀñ°üµÖ¿ÛÊ¹ÓÃÒ»¸öÔÂ£¬¹ºÂòÍê³É
-3¡¢Ö÷Ò³->ÓÒÉÏ½Ç²úÆ·¹ÜÀí->Ê¹ÓÃÖĞµÄÊı¾İ¿â,ÕâÊ±ÎÒÃÇ»á¿´¼ûÒ»¸öÊµÀı£¬Ê×ÏÈÎÒÃÇ½øÈë¹ÜÀíÒ³Ãæ¶ÔÊµÀı½øĞĞÒ»Ğ©»ù±¾µÄÉèÖÃ
-ÊµÀıÃû¿ÉÒÔËæÒâ¸ü¸Ä£¬ÍâÍøµØÖ·±ØĞë¿ªÆô£¬·ñÔòÎÒÃÇ¾Í²»ÄÜÔÚ×Ô¼ºµÄÏîÄ¿ÖĞºÍ±¾µØ·ÃÎÊÔÆÊı¾İ¿â¡£½øÈëÕËºÅ¹ÜÀíÒ³ÃæĞŞ¸Ä×Ô¼ºµÄrootÃÜÂë£¬È»ºóµã»÷ÓÒÉÏ½ÇµÄµÇÂ¼Êı¾İ¿â
- 
-4.µÇÂ½Íê³ÉÖ®ºóÈçÏÂÍ¼
-Õâ¸öºÍ±¾µØ¿Í»§¶Ë²Ù×÷»ù±¾ÏàÍ¬£¬ÎÒ¾Í²»ÏêÏ¸²ûÊöÁË
- 
+           äºŒã€ä½¿ç”¨ä¸€ä¸ªdemoæ¥è¯´æ˜å¦‚ä½•æ“ä½œäº‘mysqlæ•°æ®åº“
+1.åœ¨å®ä¾‹ä¸Šä¸Šæ–°å»ºä¸€ä¸ªä¸ºnodejsçš„æ•°æ®åº“ï¼Œç„¶åæ–°å»ºä¸€ä¸ªä¸ºemployeeçš„è¡¨ï¼Œæ–°å»ºå››ä¸ªå­—æ®µ name  sex   age   emailé™¤äº†å¹´é¾„ä¸ºintå…¶å®ƒçš„å…¨éƒ¨ä¸ºvarcharæ ¼å¼ 
+2.æ–°å»ºä¸€ä¸ªTimLiuçš„æ–‡ä»¶å¤¹,æ‰“å¼€cmdï¼Œcd TimLiu, åˆå§‹åŒ–é¡¹ç›®npm init ,æŒ‰ç…§å®ƒçš„æç¤ºä¸€æ­¥ä¸€æ­¥çš„æ“ä½œå³å¯ï¼Œå®‰è£…mysqlæ¨¡å—ï¼Œnpm insitall mysql, è¿™ä¸ªæ¨¡å—çš„ä½œç”¨ä¸»è¦æ˜¯è¿æ¥mysqlæ•°æ®åº“ã€‚
+3.æ–°å»ºä¸€ä¸ªmodel.js æ–‡ä»¶ï¼Œ
+```javascript
+    var mysql = require(â€˜mysqlâ€™); 
+    var connection = mysql.createConnection({
+            host:'',
+            user:'root',
+            password:'123abc',
+            database:' nodejs',
+            port:6445
+           })
+ connection.connect();
+```
 
-¶ş¡¢Ê¹ÓÃÒ»¸ödemoÀ´ËµÃ÷ÈçºÎ²Ù×÷ÔÆmysqlÊı¾İ¿â
-1¡¢ÔÚÊµÀıÉÏÉÏĞÂ½¨Ò»¸öÎªnodejsµÄÊı¾İ¿â£¬È»ºóĞÂ½¨Ò»¸öÎªemployeeµÄ±í£¬ĞÂ½¨ËÄ¸ö×Ö¶Î name  sex   age   email³ıÁËÄêÁäÎªintÆäËüµÄÈ«²¿Îªvarchar¸ñÊ½ 
-2¡¢ĞÂ½¨Ò»¸öTimLiuµÄÎÄ¼ş¼Ğ,´ò¿ªcmd£¬cd TimLiu, ³õÊ¼»¯ÏîÄ¿npm init ,°´ÕÕËüµÄÌáÊ¾Ò»²½Ò»²½µÄ²Ù×÷¼´¿É£¬°²×°mysqlÄ£¿é£¬npm insitall mysql, Õâ¸öÄ£¿éµÄ×÷ÓÃÖ÷ÒªÊÇÁ¬½ÓmysqlÊı¾İ¿â¡£
-3¡¢ĞÂ½¨Ò»¸ömodel.js ÎÄ¼ş£¬
-var mysql = require(¡®mysql¡¯);
-var connection = mysql.createConnection({
-    host:'',
-    user:'root',
-    password:'123abc',
-    database:' nodej,
-    port:6445
-})
-connection.connect();
-ÕâÀïµÄhostÎªÎÒÃÇÔÚÌÚÑ¶ÔÆÉÏ¿ªÍ¨µÄÍâµØÖ·£¬¶Ë¿ÚºÅÒ²ÊÇÔÚÍâÍøµØÖ·ÀïÃæ£¬×¢ÒâÒª°ÑÍâÍøµØÖ·Ğ´·Ö¿ª£¬ÓÃ»§ÎªÄ¬ÈÏµÄ¹ÜÀíÔ±ÓÃ»§£¬ÃÜÂëÎªÎÒÃÇÔÚÔÆÆ½Ì¨ÉÏÉèÖÃµÄÃÜÂë£¬Êı¾İ¿âÎªÎÒÃÇ´´½¨µÄnodejsÊı¾İ¿â¡£
-½ÓÏÂÀ´ÎÒÃÇ¶ÔÊı¾İ¿â½øĞĞÔöÉ¾¸Ä²é²Ù×÷
+è¿™é‡Œçš„hostä¸ºæˆ‘ä»¬åœ¨è…¾è®¯äº‘ä¸Šå¼€é€šçš„å¤–åœ°å€ï¼Œç«¯å£å·ä¹Ÿæ˜¯åœ¨å¤–ç½‘åœ°å€é‡Œé¢ï¼Œæ³¨æ„è¦æŠŠå¤–ç½‘åœ°å€å†™åˆ†å¼€ï¼Œç”¨æˆ·ä¸ºé»˜è®¤çš„ç®¡ç†å‘˜ç”¨æˆ·ï¼Œå¯†ç ä¸ºæˆ‘ä»¬åœ¨äº‘å¹³å°ä¸Šè®¾ç½®çš„å¯†ç ï¼Œæ•°æ®åº“ä¸ºæˆ‘ä»¬åˆ›å»ºçš„nodejsæ•°æ®åº“ã€‚
+æ¥ä¸‹æ¥æˆ‘ä»¬å¯¹æ•°æ®åº“è¿›è¡Œå¢åˆ æ”¹æŸ¥æ“ä½œ
+```javascript
+/**
+ * å¢åŠ å‘˜å·¥
+ */
 
 function addEmployee(){
     var employeeInsertSql = 'INSERT INTO employee(name,sex,age,email) VALUES(?,?,?,?)';
-    var employeeInsertSql_Params = ['Tim','ÄĞ',22,'18818216454@163.com']
+    var employeeInsertSql_Params = ['Tim','ç”·',22,'18818216454@163.com']
     connection.query(employeeInsertSql,employeeInsertSql_Params,function(err,result){
         if(err) console.log('[INSERT ERR]-',err.message);
         console.log(result);
@@ -38,11 +45,15 @@ function addEmployee(){
 }
 
 addEmployee()
+  }
+```
 
 
+```javascript
 /**
- * ¸üĞÂÔ±¹¤
- */
+ * æ›´æ–°å‘˜å·¥
+ */ 
+ 
 
 function insertEmployee(){
     var employeeUpdateSql = "UPDATE employee SET name = ? WHERE age =?";
@@ -53,13 +64,13 @@ function insertEmployee(){
     })
 }
 
+
  insertEmployee();
+ 
 
 /**
- * ²éÑ¯Ô±¹¤
- * 
- */
-
+ *æŸ¥è¯¢å‘˜å·¥
+ */  
 function getEmployee(){
     var employeeGetSql = "SELECT * FROM employee";
     connection.query(employeeGetSql,function(err,result){
@@ -67,14 +78,15 @@ function getEmployee(){
         console.log(result);
     })
 }
-
+```
 
 getEmployee();
 
-/**
- * É¾³ıÔ±¹¤
- */
 
+```javascript
+/**
+ *åˆ é™¤å‘˜å·¥
+ */  
 function deleteEmployee(){
     var employeeDeleteSql = "DELETE employee WHERE name = ?";
     var employeeDeleteSql_Params = 'Peter';
@@ -86,11 +98,13 @@ function deleteEmployee(){
 }
 
 deleteEmployee();
+```
 
 
-ÕâÑùÎÒÃÇ¾Í¿ÉÒÔÓä¿ìµÄ²Ù×÷Êı¾İ¿âÁË
+è¿™æ ·æˆ‘ä»¬å°±å¯ä»¥æ„‰å¿«çš„æ“ä½œæ•°æ®åº“äº†
 
-Èç¹û´ó¼ÒÏë°ÑÏîÄ¿¸üÄ£¿é»¯²Ù×÷£¬¿ÉÔÚmodelÏÂÃæĞÂ½¨Ò»¸öemployee_two.js,´úÂëÈçÏÂ
+## å¦‚æœå¤§å®¶æƒ³æŠŠé¡¹ç›®æ›´æ¨¡å—åŒ–æ“ä½œï¼Œå¯åœ¨modelä¸‹é¢æ–°å»ºä¸€ä¸ªemployee_two.js,ä»£ç å¦‚ä¸‹
+```javascript
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
@@ -102,9 +116,8 @@ var connection = mysql.createConnection({
 })
 connection.connect();
 
-
 /**
- * Ôö¼ÓÔ±¹¤
+ * å¢åŠ å‘˜å·¥
  * @param {String} employee
  * @param {Function} callback
  */
@@ -117,7 +130,7 @@ exports.addEmployee=function(employee,callback){
 
 
 /**
- * ¸üĞÂÔ±¹¤
+ * æ›´æ–°å‘˜å·¥
  * @param {String} employee
  * @param {Function} callback
  */
@@ -132,7 +145,7 @@ exports.updateEmployee = function(name,age){
 }
 
 /**
- * ²éÑ¯Ô±¹¤
+ * æŸ¥è¯¢å‘˜å·¥
  * 
  */
 
@@ -142,7 +155,7 @@ exports.getEmployee = function(){
 }
 
 /**
- * É¾³ıÔ±¹¤
+ * åˆ é™¤å‘˜å·¥
  * @param {String} name
  */
 
@@ -154,15 +167,15 @@ exports.deleteEmployee = function(name){
 }
 
 
-ÔÙÔÚ¸ùÄ¿Â¼ÏÂĞÂ½¨index.js,´úÂëÈçÏÂ
+å†åœ¨æ ¹ç›®å½•ä¸‹æ–°å»ºindex.js,ä»£ç å¦‚ä¸‹
 var db = require('./model/employee_two');
 
 
-//Ôö¼ÓÔ±¹¤
+//å¢åŠ å‘˜å·¥
 var employee = {
     name:'lisa',
     age:22,
-    sex:"Å®",
+    sex:"å¥³",
     email:'99533212@qq.com'
 }
 db.addEmployee(employee,function(err,result){
@@ -170,22 +183,22 @@ db.addEmployee(employee,function(err,result){
     console.log(result);
 })
 
-//É¾³ıÔ±¹¤
+//åˆ é™¤å‘˜å·¥
 db.deleteEmployee('Peter',function(err,result){
     if(err) console.log("[DELETE err]-",err.message)
     console.log(result);
 })
 
-//¸üĞÂÔ±¹¤
+//æ›´æ–°å‘˜å·¥
 db.updateEmployee('Tim',23,function(err,result){
     if(err) console.log("[UPDATE err]-",err.message)
     console.log(result);
 })
 
-//²éÑ¯Ô±¹¤
+//æŸ¥è¯¢å‘˜å·¥
 db.getEmployee(function(err,result){
     if(err) console.log("[GET err]-",err.message)
     console.log(result);
 })
-
+```
 
