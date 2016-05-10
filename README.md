@@ -17,7 +17,7 @@
 1.在实例上上新建一个为nodejs的数据库，然后新建一个为employee的表，新建四个字段 name  sex   age   email除了年龄为int其它的全部为varchar格式 
 2.新建一个TimLiu的文件夹,打开cmd，cd TimLiu, 初始化项目npm init ,按照它的提示一步一步的操作即可，安装mysql模块，npm insitall mysql, 这个模块的作用主要是连接mysql数据库。
 3.新建一个model.js 文件，
-
+```javascript
     var mysql = require(‘mysql’); 
     var connection = mysql.createConnection({
            host:'',
@@ -27,6 +27,8 @@
           port:6445
            })
  connection.connect();
+```
+
 这里的host为我们在腾讯云上开通的外地址，端口号也是在外网地址里面，注意要把外网地址写分开，用户为默认的管理员用户，密码为我们在云平台上设置的密码，数据库为我们创建的nodejs数据库。
 接下来我们对数据库进行增删改查操作
 ```javascript
@@ -45,9 +47,9 @@ addEmployee()
 
 
 
-/** 更新员工
- */
-
+#### 更新员工
+ 
+```javascript
 function insertEmployee(){
     var employeeUpdateSql = "UPDATE employee SET name = ? WHERE age =?";
     var employeeUpdateSql_Params = ['Peter',22];
@@ -56,14 +58,13 @@ function insertEmployee(){
         console.log(result);
     })
 }
+```
 
  insertEmployee();
 
-/**
- * 查询员工
- * 
- */
-
+#### 查询员工
+ 
+```javascript
 function getEmployee(){
     var employeeGetSql = "SELECT * FROM employee";
     connection.query(employeeGetSql,function(err,result){
@@ -71,14 +72,14 @@ function getEmployee(){
         console.log(result);
     })
 }
-
+```
 
 getEmployee();
 
-/**
- * 删除员工
- */
 
+#### 删除员工
+ 
+```javascript
 function deleteEmployee(){
     var employeeDeleteSql = "DELETE employee WHERE name = ?";
     var employeeDeleteSql_Params = 'Peter';
@@ -90,11 +91,13 @@ function deleteEmployee(){
 }
 
 deleteEmployee();
+```
 
 
 这样我们就可以愉快的操作数据库了
 
 如果大家想把项目更模块化操作，可在model下面新建一个employee_two.js,代码如下
+```javascript
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
@@ -105,7 +108,6 @@ var connection = mysql.createConnection({
     port:
 })
 connection.connect();
-
 
 /**
  * 增加员工
@@ -191,5 +193,5 @@ db.getEmployee(function(err,result){
     if(err) console.log("[GET err]-",err.message)
     console.log(result);
 })
-
+```
 
