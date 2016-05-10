@@ -29,7 +29,7 @@
  connection.connect();
 这里的host为我们在腾讯云上开通的外地址，端口号也是在外网地址里面，注意要把外网地址写分开，用户为默认的管理员用户，密码为我们在云平台上设置的密码，数据库为我们创建的nodejs数据库。
 接下来我们对数据库进行增删改查操作
-
+```javascript
 function addEmployee(){
     var employeeInsertSql = 'INSERT INTO employee(name,sex,age,email) VALUES(?,?,?,?)';
     var employeeInsertSql_Params = ['Tim','男',22,'18818216454@163.com']
@@ -40,6 +40,9 @@ function addEmployee(){
 }
 
 addEmployee()
+  }
+```
+
 
 
 /** 更新员工
