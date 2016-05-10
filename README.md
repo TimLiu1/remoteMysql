@@ -5,9 +5,9 @@
            一、申请数据库实例
 1. 首先是登陆腾讯云，[@腾讯云链接](http://www.qcloud.com/redirect.php?redirect=1003&cps_key=c8207f26556787357dfbc5b5133b2d19) ，点进区之后点登陆，登陆之后可以领取新手礼包，如图
 
-![alt text](/images/one.png "one")
-2. 进入云产品->数据库->CDB for MYSQL->立即选购，选购最低配的可用礼包抵扣使用一个月，购买完成
-3. 主页->右上角产品管理->使用中的数据库,这时我们会看见一个实例，首先我们进入管理页面对实例进行一些基本的设置
+![alt text](/images/one.png "one")          
+2. 进入云产品->数据库->CDB for MYSQL->立即选购，选购最低配的可用礼包抵扣使用一个月，购买完成       
+3. 主页->右上角产品管理->使用中的数据库,这时我们会看见一个实例，首先我们进入管理页面对实例进行一些基本的设置   
 实例名可以随意更改，外网地址必须开启，否则我们就不能在自己的项目中和本地访问云数据库。进入账号管理页面修改自己的root密码，然后点击右上角的登录数据库
  ![alt text](/images/two.png "two")
 4. 登陆完成之后如下图
@@ -16,7 +16,7 @@
 
            二、使用一个demo来说明如何操作云mysql数据库
 1.在实例上上新建一个为nodejs的数据库，然后新建一个为employee的表，新建四个字段 name  sex   age   email除了年龄为int其它的全部为varchar格式 
-2.新建一个TimLiu的文件夹,打开cmd，cd TimLiu, 初始化项目npm init ,按照它的提示一步一步的操作即可，安装mysql模块，npm insitall mysql, 这个模块的作用主要是连接mysql数据库。
+2.新建一个TimLiu的文件夹,打开cmd，cd TimLiu, 初始化项目npm init ,按照它的提示一步一步的操作即可，安装mysql模块，npm insitall mysql, 这个模块的作用主要是连接mysql数据库。 
 3.新建一个model.js 文件，
 ```javascript
     var mysql = require(‘mysql’); 
