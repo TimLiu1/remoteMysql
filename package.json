@@ -1,0 +1,22 @@
+{
+  "name": "timliu",
+  "version": "0.0.1",
+  "description": "a test of handle remote mysql dataBase of tenxunyun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/TimLiu1/handleMysql.git"
+  },
+  "keywords": [
+    "['nodejs','mysql']",
+    "nodejs]"
+  ],
+  "author": "Tim",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.10.2"
+  }
+}
