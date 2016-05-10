@@ -20,11 +20,11 @@
 ```javascript
     var mysql = require(‘mysql’); 
     var connection = mysql.createConnection({
-           host:'',
-           user:'root',
+            host:'',
+            user:'root',
             password:'123abc',
-           database:' nodej,
-          port:6445
+            database:' nodejs',
+            port:6445
            })
  connection.connect();
 ```
@@ -32,6 +32,10 @@
 这里的host为我们在腾讯云上开通的外地址，端口号也是在外网地址里面，注意要把外网地址写分开，用户为默认的管理员用户，密码为我们在云平台上设置的密码，数据库为我们创建的nodejs数据库。
 接下来我们对数据库进行增删改查操作
 ```javascript
+/**
+ * 增加员工
+ */
+
 function addEmployee(){
     var employeeInsertSql = 'INSERT INTO employee(name,sex,age,email) VALUES(?,?,?,?)';
     var employeeInsertSql_Params = ['Tim','男',22,'18818216454@163.com']
@@ -47,7 +51,9 @@ addEmployee()
 
 
 
-#### 更新员工
+/**
+ * 更新员工
+ */ 
  
 ```javascript
 function insertEmployee(){
@@ -61,9 +67,11 @@ function insertEmployee(){
 ```
 
  insertEmployee();
-
-#### 查询员工
  
+ 
+/**
+ *查询员工
+ */  
 ```javascript
 function getEmployee(){
     var employeeGetSql = "SELECT * FROM employee";
@@ -77,7 +85,9 @@ function getEmployee(){
 getEmployee();
 
 
-#### 删除员工
+/**
+ *删除员工
+ */  
  
 ```javascript
 function deleteEmployee(){
@@ -96,7 +106,7 @@ deleteEmployee();
 
 这样我们就可以愉快的操作数据库了
 
-如果大家想把项目更模块化操作，可在model下面新建一个employee_two.js,代码如下
+## 如果大家想把项目更模块化操作，可在model下面新建一个employee_two.js,代码如下
 ```javascript
 var mysql = require('mysql');
 
