@@ -1,6 +1,6 @@
 # remoteMysql
            关于腾讯云平台的建立和nodejs如何连接腾讯云mysql和mongoose数据库
-  ### 所有源码地址均在我的github上，地址(https://github.com/TimLiu1/remoteMysql.git)  可以在上面提任何问题，我会及时解答
+  #### 所有源码地址均在我的github上，地址(https://github.com/TimLiu1/remoteMysql.git)  可以在上面提任何问题，我会及时解答
 
 1. 首先是登陆腾讯云，链接(https://passport.qcloud.com/)，登陆之后可以领取新手礼包，如图
  
@@ -50,12 +50,12 @@ addEmployee()
 ```
 
 
-
+```javascript
 /**
  * 更新员工
  */ 
  
-```javascript
+
 function insertEmployee(){
     var employeeUpdateSql = "UPDATE employee SET name = ? WHERE age =?";
     var employeeUpdateSql_Params = ['Peter',22];
@@ -64,15 +64,14 @@ function insertEmployee(){
         console.log(result);
     })
 }
-```
+
 
  insertEmployee();
  
- 
+
 /**
  *查询员工
  */  
-```javascript
 function getEmployee(){
     var employeeGetSql = "SELECT * FROM employee";
     connection.query(employeeGetSql,function(err,result){
@@ -85,11 +84,10 @@ function getEmployee(){
 getEmployee();
 
 
+```javascript
 /**
  *删除员工
  */  
- 
-```javascript
 function deleteEmployee(){
     var employeeDeleteSql = "DELETE employee WHERE name = ?";
     var employeeDeleteSql_Params = 'Peter';
